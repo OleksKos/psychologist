@@ -1,0 +1,232 @@
+.control-button-left {
+  background-image: url(./../img/svg/arrow-left.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.control-button-right {
+  background-image: url(./../img/svg/arrow-right.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.control-button {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.control-button--primary {
+  background-color: #331832;
+  border: none;
+}
+.control-button--secondary {
+  background-color: transparent;
+  border: 1px solid #adacac;
+}
+.controls-list {
+  display: flex;
+  justify-content: center;
+  margin: 0 -10px;
+}
+
+.controls-item {
+  margin: 0 10px;
+}
+
+.youtube-slider {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.counter-list {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+
+  position: relative;
+  display: flex;
+  // font-family: "Poppins";
+  // font-style: normal;
+  // font-weight: 400;
+  font-size: 32px;
+  line-height: 100%;
+  /* or 32px */
+
+  text-align: center;
+
+  color: #1c1c1c;
+  margin-top: 30px;
+  justify-content: center;
+  @media (min-width: 992px) {
+    margin-top: 10px;
+    gap: 50px;
+    display: none;
+  }
+}
+.counter-list-desktop {
+  display: flex;
+}
+// .counter-item::before {
+//   content: "";
+//   display: block;
+//   width: 30px;
+//   height: 33px;
+//   position: absolute;
+//   z-index: -10;
+//   top: -10px;
+// }
+.counter-item span {
+  position: relative;
+  @media (min-width: 992px) {
+    color: #d9d9d9;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 40px;
+    z-index: 10;
+  }
+}
+
+.counter-list li > span::before {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 33px;
+  position: absolute;
+  z-index: -10;
+  top: 0px;
+  left: -10px;
+  @media (min-width: 992px) {
+    z-index: -10;
+  }
+}
+
+.counter-list li:nth-child(1) > span::before {
+  background-image: url(./../img/svg/ellipse-orange.svg);
+}
+.counter-list li:nth-child(2) > span::before {
+  background-image: url(./../img/svg/ellipse-blue.svg);
+}
+.counter-list li:nth-child(3) > span::before {
+  background-image: url(./../img/svg/ellipse-green.svg);
+}
+
+.counter-item :last-child {
+  margin-top: 15px;
+}
+
+.counter-item {
+  width: 33%;
+}
+
+.counter-item-description {
+  // font-family: "Poppins";
+  // font-style: normal;
+  // font-weight: 400;
+  font-size: 18px;
+  line-height: 130%;
+  text-align: center;
+  color: #1c1c1c;
+  justify-content: space-around;
+  @media (min-width: 992px) {
+    color: #d9d9d9;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+}
+
+.describe-slider-title {
+  // font-family: "Poppins";
+  // font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+
+  color: #1c1c1c;
+  margin-top: 20px;
+  margin-bottom: 8px;
+}
+
+.describe-slider-text {
+  // font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  margin-bottom: 23px;
+
+  color: #1c1c1c;
+}
+.about-wrap {
+  @media (min-width: 992px) {
+    margin-top: 60px;
+    display: flex;
+    gap: 50px;
+  }
+}
+.about-photo {
+  // background-image: url("/img/desktop/about-frame.svg");
+  // background-repeat: no-repeat;
+  // background-size: 50% 50%;
+  // background-position: center top;
+  flex: 1 1 45%;
+  position: relative;
+  @media (max-width: 982px) {
+    display: none;
+  }
+}
+.about-photo-me {
+  width: 264px;
+}
+.about-photo-family {
+  width: 252px;
+}
+.about-photo-children {
+  width: 266px;
+}
+.about-photo-me,
+.about-photo-family,
+.about-photo-children {
+  border-radius: 6px;
+  box-shadow: 0px 7px 20px 0px rgba(26, 18, 33, 0.25);
+  display: flex;
+}
+.about-text {
+  flex: 1 1 55%;
+  padding-right: 0px;
+  @media (min-width: 982px) {
+    padding-right: 70px;
+  }
+}
+.about-photo > div {
+  align-items: flex-start;
+  display: flex;
+}
+.about-photo-family {
+  margin-top: 105px;
+  margin-left: -95px;
+  @media (min-width: 1200px) {
+    margin-left: -50px;
+  }
+}
+.about-photo-children {
+  margin-top: -75px;
+  margin-left: 50px;
+}
+.media-title {
+  @media (min-width: 992px) {
+    font-size: 32px;
+    text-align: left;
+  }
+}
+.about-bg-frame {
+  position: absolute;
+  top: 10%;
+  left: 28%;
+  z-index: -10;
+  height: 80%;
+}
+.video-section {
+  padding-bottom: 60px;
+}
