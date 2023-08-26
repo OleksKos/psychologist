@@ -213,6 +213,7 @@
 
 .datalist-input-wrap {
   position: relative;
+  cursor: pointer;
 }
 
 .contacts-form .datalist-input-wrap::before {
@@ -277,4 +278,7 @@
 }
 .form-wrap {
   flex: 0 0 40%;
+}
+input[name="Message"] {
+  cursor: pointer;
 }

@@ -1,22 +1,40 @@
 //Stiky
 window.onscroll = function showHeader() {
   const header = document.querySelector(".header-section");
-  // const container = document.querySelector(".hero-section");
-  // const headerWrap = document.querySelector(".header-wrap");
   if (window.pageYOffset > 0) {
     header.classList.add("header_fixed");
-    //   container.classList.add("container_fixed");
-    //   headerWrap.classList.add("new-padding");
   } else {
     header.classList.remove("header_fixed");
-    //   container.classList.remove("container_fixed");
-    //   headerWrap.classList.remove("new-padding");
   }
 };
 
-// All animations will take exactly 500ms
-// var scroll = new SmoothScroll('a[href*="#"]', {
-//   speed: 500,
-//   speedAsDuration: true,
-//   offset: 50,
-// });
+// active class of menu items onscroll
+window.addEventListener("scroll", () => {
+  let scrollDistance = window.scrollY;
+  if (scrollDistance < 100) {
+    document.querySelectorAll(".nav-wrap-desktop nav li").forEach((elem) => {
+      elem.classList.remove("my-current");
+    });
+  }
+
+  if (window.innerWidth > 768) {
+    document.querySelectorAll(".section-menu").forEach((el, i) => {
+      if (
+        el.offsetTop -
+          350 -
+          document.querySelector(".nav-wrap-desktop nav").clientHeight <=
+        scrollDistance
+      ) {
+        document.querySelectorAll(".nav-wrap-desktop nav li").forEach((el) => {
+          if (el.classList.contains("my-current")) {
+            el.classList.remove("my-current");
+          }
+        });
+
+        document
+          .querySelectorAll(".nav-wrap-desktop nav li")
+          [i].classList.add("my-current");
+      }
+    });
+  }
+});

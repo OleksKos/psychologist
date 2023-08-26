@@ -32,9 +32,6 @@ header {
   padding: 20px 0;
 }
 
-/*.logo {
-  margin-right: auto;
-}*/
 .header_fixed {
   position: fixed;
   z-index: 99;
@@ -42,7 +39,12 @@ header {
   opacity: 1;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   transition: all 0.5s ease-in-out;
-  padding: 14px 0;
+  padding: 0;
+}
+@media (min-width: 992px) {
+  .header_fixed {
+    padding: 14px 0;
+  }
 }
 
 .menu-item a {
@@ -124,6 +126,10 @@ header {
 .nav-wrap-desktop nav a:hover,
 .nav-wrap-desktop nav a:focus-visible {
   opacity: 1;
+}
+
+.my-current {
+  --_width: 1;
 }
 
 /*Утилиты*/
@@ -1316,7 +1322,7 @@ section {
 .level-item::before {
   position: absolute;
   display: block;
-  background-image: url(./../../img/svg/tick.svg);
+  background-image: url(../img/svg/tick.svg);
   content: "";
   width: 24px;
   height: 24px;
@@ -2343,6 +2349,7 @@ section {
 
 .datalist-input-wrap {
   position: relative;
+  cursor: pointer;
 }
 
 .contacts-form .datalist-input-wrap::before {
@@ -2401,6 +2408,10 @@ section {
 
 .form-wrap {
   flex: 0 0 40%;
+}
+
+input[name=Message] {
+  cursor: pointer;
 }
 
 footer .logo {
