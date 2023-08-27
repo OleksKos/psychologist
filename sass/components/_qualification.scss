@@ -17,6 +17,10 @@
   text-align: center;
   margin-bottom: 30px;
   color: #f0efef;
+  @media (min-width: 992px) {
+    font-size: 20px;
+    line-height: 28px;
+  }
 }
 
 .qualification-section h2 {

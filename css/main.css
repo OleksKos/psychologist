@@ -815,6 +815,12 @@ section {
   margin-bottom: 30px;
   color: #f0efef;
 }
+@media (min-width: 992px) {
+  .qualification-description {
+    font-size: 20px;
+    line-height: 28px;
+  }
+}
 
 .qualification-section h2 {
   margin-bottom: 15px;
