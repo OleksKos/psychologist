@@ -45,7 +45,7 @@
 }
 .contacts-list {
   position: relative;
-  margin-bottom: 57px;
+  // margin-bottom: 57px;
   & :nth-child(1).contacts-item::before {
     background-image: url(../img/svg/whatsapp.svg);
 
@@ -252,7 +252,7 @@
   color: #828181;
 }
 .datalist-input {
-  margin-bottom: 0 !important;
+  margin-bottom: 0px !important;
 }
 
 .is-open {
@@ -281,4 +281,24 @@
 }
 input[name="Message"] {
   cursor: pointer;
+}
+.form__checkbox-wrapper {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+  align-items: center;
+}
+.form__checkbox-text {
+  color: #2e2d2d;
+  line-height: 100% !important;
+  font-weight: 300;
+
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+}
+.form__checkbox-wrapper input[type="checkbox"] {
+  height: 20px;
+  width: unset;
+  margin-bottom: 0px !important;
 }

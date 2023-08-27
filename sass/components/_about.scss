@@ -178,15 +178,22 @@
 }
 .about-photo-me {
   width: 264px;
-  --animate-delay: 500ms;
+  --animate-delay-500ms: 500ms;
 }
 .about-photo-family {
   width: 252px;
-  --animate-delay: 1s;
+  --animate-delay-1000ms: 1s;
+  margin-top: 105px;
+  margin-left: -95px;
+  @media (min-width: 1200px) {
+    margin-left: -50px;
+  }
 }
 .about-photo-children {
   width: 266px;
-  --animate-delay: 2.5s;
+  --animate-delay-2500ms: 2.5s;
+  margin-top: -75px;
+  margin-left: 50px;
 }
 .about-photo-me,
 .about-photo-family,
@@ -206,17 +213,7 @@
   align-items: flex-start;
   display: flex;
 }
-.about-photo-family {
-  margin-top: 105px;
-  margin-left: -95px;
-  @media (min-width: 1200px) {
-    margin-left: -50px;
-  }
-}
-.about-photo-children {
-  margin-top: -75px;
-  margin-left: 50px;
-}
+
 .media-title {
   @media (min-width: 992px) {
     font-size: 32px;
