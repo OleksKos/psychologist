@@ -414,7 +414,7 @@ img {
 .slick-next {
   width: 30px !important;
   height: 30px !important;
-  border-radius: 50%;
+  border-radius: 50% !important;
   background: #331832 !important;
   outline: 1px solid #fff !important;
 }
