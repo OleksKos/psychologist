@@ -178,12 +178,15 @@
 }
 .about-photo-me {
   width: 264px;
+  --animate-delay: 500ms;
 }
 .about-photo-family {
   width: 252px;
+  --animate-delay: 1s;
 }
 .about-photo-children {
   width: 266px;
+  --animate-delay: 2.5s;
 }
 .about-photo-me,
 .about-photo-family,
