@@ -1933,7 +1933,7 @@ section {
   position: absolute;
   content: "";
   display: block;
-  background-image: url(/img/svg/quotation-2.svg);
+  background-image: url("../img/svg/quotation-2.svg");
   width: 28px;
   height: 28px;
   top: -32px;
@@ -1944,7 +1944,7 @@ section {
   position: absolute;
   content: "";
   display: block;
-  background-image: url(/img/svg/quotation-3.svg);
+  background-image: url("../img/svg/quotation-3.svg");
   width: 26px;
   height: 26px;
   right: 0;
@@ -2427,9 +2427,14 @@ input[name=Message] {
   color: #2e2d2d;
   line-height: 100% !important;
   font-weight: 300;
-  font-size: 16px;
+  font-size: 13px;
   font-style: normal;
   font-weight: 300;
+}
+@media (min-width: 767px) {
+  .form__checkbox-text {
+    font-size: 16px;
+  }
 }
 
 .form__checkbox-wrapper input[type=checkbox] {
