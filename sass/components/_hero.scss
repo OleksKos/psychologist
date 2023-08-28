@@ -250,8 +250,15 @@
   width: 30px !important;
   height: 30px !important;
   border-radius: 50% !important;
-  background: #331832 !important;
+  background-color: #331832 !important;
   border: 1px solid #fff !important;
+  transition: background-color 300ms ease-in-out;
+  &:hover {
+    background-color: #633061 !important;
+    transition: background-color 300ms ease-in-out;
+    // transition: border-color 300ms ease-in-out;
+    // border: 1px solid #633061 !important;
+  }
   @media (min-width: 992px) {
     width: 36px !important;
     height: 36px !important;
@@ -267,7 +274,7 @@
   }
 }
 .slick-next {
-  left: 52% !important;
+  left: 51.5% !important;
   bottom: -40px;
   top: unset !important;
   transform: unset !important;

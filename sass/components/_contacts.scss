@@ -28,11 +28,12 @@
 }
 .contacts-bg-wrap {
   position: relative;
-  max-width: 323px;
-  height: 231px;
-
+  // max-width: 300px;
   margin-left: auto;
   margin-right: auto;
+  @media (min-width: 992px) {
+    max-width: 450px;
+  }
 }
 
 .contacts-item::before {

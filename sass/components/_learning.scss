@@ -525,3 +525,8 @@
 .feature-list-wrap .appointment-button {
   margin-top: 60px;
 }
+.learning-wrap-img {
+  @media (min-width: 992px) {
+    width: 30% !important;
+  }
+}

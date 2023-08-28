@@ -54,6 +54,9 @@
   position: absolute;
   bottom: 7px;
   right: 30px;
+  &:hover {
+    cursor: pointer;
+  }
   @media (min-width: 700px) {
     bottom: 15px;
   }
