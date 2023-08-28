@@ -2744,6 +2744,7 @@ footer.primary-section {
   display: block;
   transform: translateX(0);
   transition: transform 550ms cubic-bezier(0.4, 0, 0.2, 1);
+  min-height: -webkit-fill-available;
 }
 .menu-container.is-open .menu-open-icon {
   display: block;
@@ -2787,4 +2788,48 @@ footer.primary-section {
   display: block;
   right: 20px;
   top: 35px;
+}
+
+.mobile-menu-list li.mobile-menu-item {
+  opacity: 0;
+}
+
+.mobile-menu-list li.link-fade:nth-child(1) {
+  opacity: 1;
+  transition: all 0.5s ease 0.2s;
+}
+
+.mobile-menu-list li.link-fade:nth-child(2) {
+  opacity: 1;
+  transition: all 0.5s ease 0.4s;
+}
+
+.mobile-menu-list li.link-fade:nth-child(3) {
+  opacity: 1;
+  transition: all 0.5s ease 0.6s;
+}
+
+.mobile-menu-list li.link-fade:nth-child(4) {
+  opacity: 1;
+  transition: all 0.5s ease 0.8s;
+}
+
+.mobile-menu-list li.link-fade:nth-child(5) {
+  opacity: 1;
+  transition: all 0.5s ease 1s;
+}
+
+.mobile-menu-list li.link-fade:nth-child(6) {
+  opacity: 1;
+  transition: all 0.5s ease 1.2s;
+}
+
+.mobile-menu-list li.link-fade:nth-child(7) {
+  opacity: 1;
+  transition: all 0.5s ease 1.4s;
+}
+
+.mobile-menu-list li.link-fade:nth-child(8) {
+  opacity: 1;
+  transition: all 0.5s ease 1.6s;
 }/*# sourceMappingURL=main.css.map */

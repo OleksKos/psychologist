@@ -128,16 +128,5 @@ header {
   opacity: 1;
 }
 .my-current {
-  // content: "";
-  // position: absolute;
-  // left: 0;
-  // bottom: 0;
-  // height: 2px;
-  // width: 100%;
-  // background: #fe8432;
-  // translate: var(--_translate, 0);
-  // scale: var(--_width, 0) 1;
-  // transition: scale 300ms var(--_scale-delay, 0ms),
-  //   translate 500ms var(--_translate-delay, 0ms);
   --_width: 1;
 }
