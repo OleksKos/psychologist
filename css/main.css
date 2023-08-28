@@ -790,7 +790,7 @@ section {
 
 .primary-section {
   background-color: #331832;
-  padding-bottom: 30px;
+  padding-bottom: 50px;
 }
 @media (min-width: 992px) {
   .primary-section {
