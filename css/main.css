@@ -1917,7 +1917,7 @@ section {
   /* identical to box height */
   text-align: center;
   color: #1c1c1c;
-  margin-bottom: 80px;
+  margin-bottom: 60px;
 }
 
 .feedback-text {
@@ -2171,6 +2171,17 @@ section {
   }
 }
 
+.article-text-transform::after {
+  content: url("/img/svg/double-arrow-down.svg");
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  bottom: 10px;
+  right: 50%;
+  color: #331832;
+  transform: rotate(180deg);
+}
+
 .contacts-bg-2 {
   background-image: url(../img/mobile/telegram.png);
   width: 242px;
@@ -2416,7 +2427,6 @@ section {
 .is-open {
   transition: all 1s;
   padding: 8px 4px 10px 20px;
-  border: 1px solid #d5d5d5;
 }
 
 .dropdown-list-hidden {

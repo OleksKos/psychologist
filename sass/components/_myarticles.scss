@@ -193,3 +193,14 @@
     gap: 34px;
   }
 }
+
+.article-text-transform::after {
+  content: url("/img/svg/double-arrow-down.svg");
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  bottom: 10px;
+  right: 50%;
+  color: $main-background-color;
+  transform: rotate(180deg);
+}
