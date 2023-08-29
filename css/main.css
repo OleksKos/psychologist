@@ -716,6 +716,10 @@ body {
   padding-bottom: 60px;
 }
 
+.youtube-slider iframe {
+  border: none;
+}
+
 h2 {
   padding-top: 40px;
   font-family: "Oswald";
