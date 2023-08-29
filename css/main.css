@@ -1972,11 +1972,36 @@ section {
 .feedback-wrap {
   padding: 30px 36px 86px 36px;
   overflow: hidden;
+  position: relative;
 }
 
 .feedback-section {
   padding-bottom: 90px;
 }
+.feedback-wrap:has(.hidden)::after {
+  content: url("../img/svg/double-arrow-down.svg");
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  bottom: 10px;
+  left: calc(50% - 15px);
+  color: #331832;
+  transition: all 500ms ease-in-out;
+  text-align: center;
+}
+
+.feedback-wrap:has(.feedback-text-cut.hidden)::after {
+  content: url("../img/svg/double-arrow-up.svg");
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  bottom: 10px;
+  left: calc(50% - 15px);
+  text-align: center;
+  color: #331832;
+  transition: all 500ms ease-in-out;
+}
+
 .article-wrap {
   background: #ffffff;
   border-radius: 10px;
